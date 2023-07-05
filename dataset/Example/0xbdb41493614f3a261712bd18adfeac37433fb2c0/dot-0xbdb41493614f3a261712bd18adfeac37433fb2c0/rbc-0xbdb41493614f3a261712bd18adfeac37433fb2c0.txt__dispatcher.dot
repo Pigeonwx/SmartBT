@@ -1,0 +1,116 @@
+digraph{
+0[label="0x0:PUSH1 0x60
+0x2:PUSH1 0x40
+0x4:MSTORE
+0x5:CALLDATASIZE
+0x6:ISZERO
+0x7:PUSH2 0xb8
+0xa:JUMPI"]
+0 -> 11
+0 -> 184
+11[label="0xb:PUSH1 0x0
+0xd:CALLDATALOAD
+0xe:PUSH29 0x100000000000000000000000000000000000000000000000000000000
+0x2c:SWAP1
+0x2d:DIV
+0x2e:PUSH4 0xffffffff
+0x33:AND
+0x34:DUP1
+0x35:PUSH4 0x6fdde03
+0x3a:EQ
+0x3b:PUSH2 0xbd
+0x3e:JUMPI"]
+11 -> 63
+11 -> 189
+63[label="0x3f:DUP1
+0x40:PUSH4 0x95ea7b3
+0x45:EQ
+0x46:PUSH2 0x14c
+0x49:JUMPI"]
+63 -> 74
+63 -> 332
+74[label="0x4a:DUP1
+0x4b:PUSH4 0x18160ddd
+0x50:EQ
+0x51:PUSH2 0x1a6
+0x54:JUMPI"]
+74 -> 85
+74 -> 422
+85[label="0x55:DUP1
+0x56:PUSH4 0x23b872dd
+0x5b:EQ
+0x5c:PUSH2 0x1cf
+0x5f:JUMPI"]
+85 -> 96
+85 -> 463
+96[label="0x60:DUP1
+0x61:PUSH4 0x313ce567
+0x66:EQ
+0x67:PUSH2 0x248
+0x6a:JUMPI"]
+96 -> 107
+96 -> 584
+107[label="0x6b:DUP1
+0x6c:PUSH4 0x42966c68
+0x71:EQ
+0x72:PUSH2 0x277
+0x75:JUMPI"]
+107 -> 118
+107 -> 631
+118[label="0x76:DUP1
+0x77:PUSH4 0x70a08231
+0x7c:EQ
+0x7d:PUSH2 0x2b2
+0x80:JUMPI"]
+118 -> 129
+118 -> 690
+129[label="0x81:DUP1
+0x82:PUSH4 0x79cc6790
+0x87:EQ
+0x88:PUSH2 0x2ff
+0x8b:JUMPI"]
+129 -> 140
+129 -> 767
+140[label="0x8c:DUP1
+0x8d:PUSH4 0x95d89b41
+0x92:EQ
+0x93:PUSH2 0x359
+0x96:JUMPI"]
+140 -> 151
+140 -> 857
+151[label="0x97:DUP1
+0x98:PUSH4 0xa9059cbb
+0x9d:EQ
+0x9e:PUSH2 0x3e8
+0xa1:JUMPI"]
+151 -> 162
+151 -> 1000
+162[label="0xa2:DUP1
+0xa3:PUSH4 0xcae9ca51
+0xa8:EQ
+0xa9:PUSH2 0x42a
+0xac:JUMPI"]
+162 -> 173
+162 -> 1066
+173[label="0xad:DUP1
+0xae:PUSH4 0xdd62ed3e
+0xb3:EQ
+0xb4:PUSH2 0x4c7
+0xb7:JUMPI"]
+173 -> 184
+173 -> 1223
+184[label="Call _fallback"]
+189[label="Call name()"]
+332[label="Call approve(address,uint256)"]
+422[label="Call totalSupply()"]
+463[label="Call transferFrom(address,address,uint256)"]
+584[label="Call decimals()"]
+631[label="Call burn(uint256)"]
+690[label="Call balanceOf(address)"]
+767[label="Call burnFrom(address,uint256)"]
+857[label="Call symbol()"]
+1000[label="Call transfer(address,uint256)"]
+1066[label="Call approveAndCall(address,uint256,bytes)"]
+1223[label="Call allowance(address,address)"]
+
+}
